@@ -7,9 +7,12 @@
     tools:context="chen0040.github.com.androidgeeks4geeks.fragments.MainActivityFragment"
     tools:showIn="@layout/activity_main">
 
-    <com.github.chen0040.androidcodeview.SourceCodeView
-        android:id="@+id/codeViewer"
+    <ListView
+        android:id="@+id/grid_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:scrollbarStyle="insideOverlay"
+        android:clickable="true" android:cacheColorHint="#ffffff">
+    </ListView>
 
 </android.support.constraint.ConstraintLayout>
