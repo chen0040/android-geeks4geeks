@@ -7,7 +7,7 @@
     tools:showIn="@layout/activity_main">
 
     <ListView
-        android:id="@+id/grid_view"
+        android:id="@+id/lvSolutions"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbarStyle="insideOverlay"

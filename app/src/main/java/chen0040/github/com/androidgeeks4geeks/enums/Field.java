@@ -24,4 +24,9 @@ public enum Field {
         return description;
     }
 
+    public static Field getEnum(String value) {
+        for(Field v : values())
+            if(v.toString().equalsIgnoreCase(value)) return v;
+        throw new IllegalArgumentException();
+    }
 }

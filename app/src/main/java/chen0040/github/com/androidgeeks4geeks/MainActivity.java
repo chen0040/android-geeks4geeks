@@ -14,9 +14,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import chen0040.github.com.androidgeeks4geeks.enums.Field;
+import chen0040.github.com.androidgeeks4geeks.enums.Topic;
 import chen0040.github.com.androidgeeks4geeks.fragments.FieldFragment;
 import chen0040.github.com.androidgeeks4geeks.fragments.FragmentMediator;
 import chen0040.github.com.androidgeeks4geeks.fragments.MainActivityFragment;
+import chen0040.github.com.androidgeeks4geeks.fragments.SolutionFragment;
+import chen0040.github.com.androidgeeks4geeks.fragments.TopicFragment;
+import chen0040.github.com.androidgeeks4geeks.models.Solution;
 
 public class MainActivity extends AppCompatActivity implements FragmentMediator {
 
@@ -85,6 +89,47 @@ public class MainActivity extends AppCompatActivity implements FragmentMediator 
         }
     }
 
+    @Override
+    public void gotoTopic(Field field, Topic topic) {
+        TopicFragment fragment = new TopicFragment();
+        FragmentManager fm = getSupportFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        fragment.setMediator(this);
+
+        Bundle bundle = new Bundle();
+        bundle.putString("field", field.toString());
+        bundle.putString("topic", topic.toString());
+        fragment.setArguments(bundle);
+
+        ft.replace(R.id.content_frame, fragment, TopicFragment.TAG);
+        ft.addToBackStack(TopicFragment.TAG);
+        ft.commit();
+    }
+
+    @Override
+    public void gotoSolution(Solution solution) {
+        SolutionFragment fragment = new SolutionFragment();
+        FragmentManager fm = getSupportFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        fragment.setMediator(this);
+
+        Field field = solution.getField();
+        Topic topic = solution.getTopic();
+        String filename = solution.getFilename();
+        String name = solution.getName();
+
+        Bundle bundle = new Bundle();
+        bundle.putString("field", field.toString());
+        bundle.putString("topic", topic.toString());
+        bundle.putString("name", name);
+        bundle.putString("filename", filename);
+        fragment.setArguments(bundle);
+
+        ft.replace(R.id.content_frame, fragment, SolutionFragment.TAG);
+        ft.addToBackStack(SolutionFragment.TAG);
+        ft.commit();
+    }
+
     public Fragment getActiveFragment() {
         if (getSupportFragmentManager().getBackStackEntryCount() == 0) {
             return null;
@@ -115,6 +160,10 @@ public class MainActivity extends AppCompatActivity implements FragmentMediator 
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
         fragment.setMediator(this);
+
+        Bundle bundle = new Bundle();
+        bundle.putString("field", field.toString());
+        fragment.setArguments(bundle);
 
         ft.replace(R.id.content_frame, fragment, FieldFragment.TAG);
         ft.addToBackStack(FieldFragment.TAG);
