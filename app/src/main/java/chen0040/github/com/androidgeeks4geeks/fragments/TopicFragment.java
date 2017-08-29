@@ -16,6 +16,7 @@ import chen0040.github.com.androidgeeks4geeks.components.SolutionAdapter;
 import chen0040.github.com.androidgeeks4geeks.enums.Field;
 import chen0040.github.com.androidgeeks4geeks.enums.Topic;
 import chen0040.github.com.androidgeeks4geeks.models.Solution;
+import chen0040.github.com.androidgeeks4geeks.services.SolutionFactory;
 
 /**
  * Created by chen0 on 24/8/2017.
@@ -62,13 +63,7 @@ public class TopicFragment extends Fragment {
     }
 
     private List<Solution> getSolutions() {
-        List<Solution> solutions = new ArrayList<>();
-        solutions.add(new Solution("Find the element that appears once", "bitwise_algorithms/find_the_element_that_appears_once.java", field, topic));
-        solutions.add(new Solution("Detect if two integers have opposite signs", "bitwise_algorithms/int_opposite_sign.java", field, topic));
-        solutions.add(new Solution("Add 1 to a given number", "bitwise_algorithms/add_one.java", field, topic));
-
-
-        return solutions;
+        return SolutionFactory.getSolutions(field, topic);
     }
 
 }
