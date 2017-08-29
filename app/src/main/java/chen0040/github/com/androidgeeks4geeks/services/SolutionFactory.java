@@ -40,6 +40,7 @@ public class SolutionFactory {
         solutions.add(new Solution("Count set bits in an integer", "bitwise_algorithms/count_set_bits.java", field, topic));
         solutions.add(new Solution("Efficient way to multiply with 7", "bitwise_algorithms/multiply_with_7.java", field, topic));
         solutions.add(new Solution("Position of rightmost set bit", "bitwise_algorithms/rightmost_set_bit.java", field, topic));
+        solutions.add(new Solution("Binary representation of a given number", "bitwise_algorithms/binary_representation.java", field, topic));
 
         Log.i(TAG, "solutions: " + solutions.size());
 
