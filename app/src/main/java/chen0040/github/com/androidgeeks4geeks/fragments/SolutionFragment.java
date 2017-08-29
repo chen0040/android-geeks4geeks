@@ -1,5 +1,6 @@
 package chen0040.github.com.androidgeeks4geeks.fragments;
 
+import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -7,6 +8,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.github.chen0040.androidcodeview.SourceCodeView;
 
@@ -43,13 +45,10 @@ public class SolutionFragment extends Fragment {
         String filename = solution.getFilename();
         String foldername = solution.getTopic().folder();
         String filepath = "" + foldername + "/" + filename;
+        AssetManager am = getContext().getAssets();
         StringBuilder sb = new StringBuilder();
         try {
-            File file = new File(filepath);
-            if(file.exists()) {
-                Log.i(TAG, "File exists: " + filepath);
-            }
-            BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
+            BufferedReader reader = new BufferedReader(new InputStreamReader(am.open(filename)));
             String line;
             while((line = reader.readLine())!=null){
                 sb.append(line);
@@ -84,8 +83,40 @@ public class SolutionFragment extends Fragment {
         SourceCodeView browser = (SourceCodeView)mainView.findViewById(R.id.codeViewer);
         browser.enableDebugging(this.getContext());
 
-        browser.setJavaCode(sourceCode);
+        browser.setJavaCode(getCode(sourceCode));
+
+        TextView txtProblem = (TextView)mainView.findViewById(R.id.txtProblem);
+
+        txtProblem.setText(getComments(sourceCode));
 
         return mainView;
+    }
+
+    private String getCode(String source){
+        int end = source.indexOf("**/");
+        if(end >= 0) {
+            return source.substring(end+3);
+        }
+        return source;
+    }
+
+    private String getComments(String source) {
+        int start = source.indexOf("/**");
+        int end = source.indexOf("**/");
+        if(start >= 0 && end >=0) {
+            String text = source.substring(start + 3, end);
+            String[] lines = text.split("\n");
+            StringBuilder sb = new StringBuilder();
+            for(String line : lines) {
+                line = line.trim();
+                if(line.startsWith("*")) {
+                    line = line.substring(1);
+                }
+                sb.append(line + "\n");
+            }
+            return sb.toString();
+        } else {
+            return "";
+        }
     }
 }

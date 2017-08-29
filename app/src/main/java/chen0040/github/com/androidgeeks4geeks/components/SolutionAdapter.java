@@ -33,7 +33,7 @@ public class SolutionAdapter extends BaseAdapter {
         if (convertView == null) {
             LayoutInflater inflater = (LayoutInflater) context
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = inflater.inflate(R.layout.line_topic, null);
+            convertView = inflater.inflate(R.layout.line_solution, null);
             final TextView txtName = (TextView) convertView.findViewById(R.id.txtName);
             txtName.setText(solutions.get(position).getName());
         }

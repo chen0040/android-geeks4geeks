@@ -7,10 +7,27 @@
     tools:context="chen0040.github.com.androidgeeks4geeks.fragments.MainActivityFragment"
     tools:showIn="@layout/activity_main">
 
-    <com.github.chen0040.androidcodeview.SourceCodeView
-        android:id="@+id/codeViewer"
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:scrollbars="vertical"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtProblem"
+            />
+
+        <com.github.chen0040.androidcodeview.SourceCodeView
+            android:id="@+id/codeViewer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
 
 
 
