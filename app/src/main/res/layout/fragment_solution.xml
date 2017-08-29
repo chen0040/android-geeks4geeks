@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="chen0040.github.com.androidgeeks4geeks.fragments.MainActivityFragment"
+    android:background="@android:color/white"
     tools:showIn="@layout/activity_main">
 
     <android.support.design.widget.AppBarLayout

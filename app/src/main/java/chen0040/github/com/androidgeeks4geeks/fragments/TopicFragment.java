@@ -45,7 +45,6 @@ public class TopicFragment extends Fragment {
         lvSolutions = (ListView)mainView.findViewById(R.id.lvSolutions);
         SolutionAdapter adapter = new SolutionAdapter(getContext(), solutions);
         lvSolutions.setAdapter(adapter);
-        adapter.notifyDataSetChanged();
 
         lvSolutions.setOnItemClickListener((parent, view, position, id) -> mediator.gotoSolution(solutions.get(position)));
 

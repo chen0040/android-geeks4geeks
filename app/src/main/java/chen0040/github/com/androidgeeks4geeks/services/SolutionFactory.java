@@ -1,5 +1,7 @@
 package chen0040.github.com.androidgeeks4geeks.services;
 
+import android.util.Log;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,6 +14,7 @@ import chen0040.github.com.androidgeeks4geeks.models.Solution;
  */
 
 public class SolutionFactory {
+    private static final String TAG = "SolutionFactory";
     public static List<Solution> getSolutions(Field field, Topic topic) {
        if(topic == Topic.BitwiseAlgorithms) {
            return getBitwiseAlgorithms(field, topic);
@@ -33,6 +36,10 @@ public class SolutionFactory {
         solutions.add(new Solution("Rotate bits of a number", "bitwise_algorithms/rotate_bits_of_a_number.java", field, topic));
         solutions.add(new Solution("Find the Number Occurring Odd Number of Times", "bitwise_algorithms/number_appearing_odd_number_of_times.java", field, topic));
         solutions.add(new Solution("Check for Integer Overflow", "bitwise_algorithms/check_int_overflow.java", field, topic));
+        solutions.add(new Solution("Count set bits in an integer", "bitwise_algorithms/count_set_bits.java", field, topic));
+        solutions.add(new Solution("Efficient way to multiply with 7", "bitwise_algorithms/multiply_with_7.java", field, topic));
+
+        Log.i(TAG, "solutions: " + solutions.size());
 
         return solutions;
     }

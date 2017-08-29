@@ -37,9 +37,11 @@ public class FieldAdapter extends BaseAdapter {
             LayoutInflater inflater = (LayoutInflater) context
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = inflater.inflate(R.layout.line_field, null);
-            final TextView txtName = (TextView) convertView.findViewById(R.id.txtName);
-            txtName.setText(fields.get(position).toString());
+
         }
+
+        final TextView txtName = (TextView) convertView.findViewById(R.id.txtName);
+        txtName.setText(fields.get(position).toString());
 
         return convertView;
     }

@@ -34,9 +34,13 @@ public class TopicAdapter extends BaseAdapter {
             LayoutInflater inflater = (LayoutInflater) context
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = inflater.inflate(R.layout.line_topic, null);
-            final TextView txtName = (TextView) convertView.findViewById(R.id.txtName);
-            txtName.setText(topics.get(position).toString());
+
         }
+
+        final TextView txtName = (TextView) convertView.findViewById(R.id.txtName);
+        txtName.setText(topics.get(position).toString());
+
+
 
         return convertView;
     }
