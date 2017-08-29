@@ -28,6 +28,9 @@ public class SolutionFactory {
         solutions.add(new Solution("Add 1 to a given number", "bitwise_algorithms/add_one.java", field, topic));
         solutions.add(new Solution("Multiply a given Integer with 3.5", "bitwise_algorithms/multiply_3p5.java", field, topic));
         solutions.add(new Solution("Turn off the rightmost set bit", "bitwise_algorithms/turn_off_rightmost_set_bit.java", field, topic));
+        solutions.add(new Solution("Find whether a given number is a power of 4 or not", "bitwise_algorithms/power_of_four.java", field, topic));
+        solutions.add(new Solution("Compute modulus division by a power-of-2-number", "bitwise_algorithms/modulus_by_power_of_2.java", field, topic));
+
 
 
         return solutions;
