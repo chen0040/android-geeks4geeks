@@ -30,8 +30,9 @@ public class SolutionFactory {
         solutions.add(new Solution("Turn off the rightmost set bit", "bitwise_algorithms/turn_off_rightmost_set_bit.java", field, topic));
         solutions.add(new Solution("Find whether a given number is a power of 4 or not", "bitwise_algorithms/power_of_four.java", field, topic));
         solutions.add(new Solution("Compute modulus division by a power-of-2-number", "bitwise_algorithms/modulus_by_power_of_2.java", field, topic));
-
-
+        solutions.add(new Solution("Rotate bits of a number", "bitwise_algorithms/rotate_bits_of_a_number.java", field, topic));
+        solutions.add(new Solution("Find the Number Occurring Odd Number of Times", "bitwise_algorithms/number_appearing_odd_number_of_times.java", field, topic));
+        solutions.add(new Solution("Check for Integer Overflow", "bitwise_algorithms/check_int_overflow.java", field, topic));
 
         return solutions;
     }
