@@ -39,6 +39,7 @@ public class SolutionFactory {
         solutions.add(new Solution("Check for Integer Overflow", "bitwise_algorithms/check_int_overflow.java", field, topic));
         solutions.add(new Solution("Count set bits in an integer", "bitwise_algorithms/count_set_bits.java", field, topic));
         solutions.add(new Solution("Efficient way to multiply with 7", "bitwise_algorithms/multiply_with_7.java", field, topic));
+        solutions.add(new Solution("Position of rightmost set bit", "bitwise_algorithms/rightmost_set_bit.java", field, topic));
 
         Log.i(TAG, "solutions: " + solutions.size());
 
