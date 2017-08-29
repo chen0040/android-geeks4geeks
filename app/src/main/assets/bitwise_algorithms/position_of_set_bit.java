@@ -1,6 +1,5 @@
 /**
- * Given a number having only one ‘1’ and all other ’0’s in its binary representation, find
- * position of the only set bit.
+ * Given a number having only one ‘1’ and all other ’0’s in its binary representation, find position of the only set bit.
  **/
 
 public class Solution {

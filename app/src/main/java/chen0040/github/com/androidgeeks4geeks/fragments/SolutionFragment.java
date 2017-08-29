@@ -113,10 +113,8 @@ public class SolutionFragment extends Fragment {
                     line = line.substring(1);
                 }
                 line = line.trim();
-                if(line.equals("")){
-                    sb.append("\n\n");
-                }
                 sb.append(line);
+                sb.append("\n");
             }
             return sb.toString();
         } else {
