@@ -112,7 +112,11 @@ public class SolutionFragment extends Fragment {
                 if(line.startsWith("*")) {
                     line = line.substring(1);
                 }
-                sb.append(line.trim() + "\n");
+                line = line.trim();
+                if(line.equals("")){
+                    sb.append("\n\n");
+                }
+                sb.append(line);
             }
             return sb.toString();
         } else {
