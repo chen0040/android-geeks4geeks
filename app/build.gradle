@@ -36,5 +36,7 @@ dependencies {
     compile 'com.android.support:design:25.3.1'
     compile 'com.github.chen0040:android-code-view:1.0.4'
     compile 'com.yarolegovich:lovely-dialog:1.0.7'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.android.support:cardview-v7:25.3.1'
     testCompile 'junit:junit:4.12'
 }
