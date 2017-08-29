@@ -4,3 +4,8 @@
  * difference (8n – n).
  **/
 
+public class Solution {
+    public void multiplyWith7(int x) {
+        return (x << 3) - x;
+    }
+}
