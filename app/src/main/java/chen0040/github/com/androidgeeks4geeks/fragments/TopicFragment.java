@@ -64,6 +64,8 @@ public class TopicFragment extends Fragment {
     private List<Solution> getSolutions() {
         List<Solution> solutions = new ArrayList<>();
         solutions.add(new Solution("Find the element that appears once", "bitwise_algorithms/find_the_element_that_appears_once.java", field, topic));
+        solutions.add(new Solution("Detect if two integers have opposite signs", "bitwise_algorithms/int_opposite_sign.java", field, topic));
+
         return solutions;
     }
 
