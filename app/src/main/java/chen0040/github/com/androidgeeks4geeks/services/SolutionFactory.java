@@ -59,7 +59,7 @@ public class SolutionFactory {
         solutions.add(new Solution("Basic", "Count minimum bits to flip such that XOR of A and B equal to C", "bitwise_algorithms/min_bits_to_flip_xor.java", field, topic));
         solutions.add(new Solution("Basic", "Efficient method for 2’s complement of a binary string", "bitwise_algorithms/two_complement_of_binary_str.java", field, topic));
         solutions.add(new Solution("Basic", "Toggle case of a string using Bitwise operators", "bitwise_algorithms/toggle_string_case.java", field, topic));
-
+        solutions.add(new Solution("Basic", "Toggling k-th bit of a number", "bitwise_algorithms/toggle_k_th_bit.java", field, topic));
 
         Log.i(TAG, "solutions: " + solutions.size());
 
