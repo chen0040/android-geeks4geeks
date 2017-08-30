@@ -54,7 +54,7 @@ public class SolutionFactory {
         solutions.add(new Solution("Calculate XOR from 1 to n.", "bitwise_algorithms/xor_from_one_to_n.java", field, topic));
         solutions.add(new Solution("Multiply a number with 10 without using multiplication operator", "bitwise_algorithms/multiply_10.java", field, topic));
         solutions.add(new Solution("Equal Sum and XOR", "bitwise_algorithms/equal_sum_and_xor.java", field, topic));
-
+        solutions.add(new Solution("Swap three variables without using temporary variable", "bitwise_algorithms/swap_three_numbers.java", field, topic));
 
 
 
