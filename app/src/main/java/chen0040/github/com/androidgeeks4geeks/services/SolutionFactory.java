@@ -45,6 +45,8 @@ public class SolutionFactory {
         solutions.add(new Solution("How to swap two numbers without using a temporary variable?", "bitwise_algorithms/swap_two_numbers.java", field, topic));
         solutions.add(new Solution("Swap two nibbles in a byte", "bitwise_algorithms/swap_nibbles.java", field, topic));
         solutions.add(new Solution("How to turn off a particular bit in a number?", "bitwise_algorithms/turn_off_a_bit.java", field, topic));
+        solutions.add(new Solution("Multiply two numbers using bitwise operators", "bitwise_algorithms/multiply_using_bitwise_op.java", field, topic));
+
 
 
 
