@@ -47,6 +47,8 @@ public class SolutionFactory {
         solutions.add(new Solution("How to turn off a particular bit in a number?", "bitwise_algorithms/turn_off_a_bit.java", field, topic));
         solutions.add(new Solution("Multiply two numbers using bitwise operators", "bitwise_algorithms/multiply_using_bitwise_op.java", field, topic));
         solutions.add(new Solution("Add two bit strings", "bitwise_algorithms/add_two_bit_strings.java", field, topic));
+        solutions.add(new Solution("Write your own strcmp that ignores cases", "bitwise_algorithms/strcmp_ignore_case.java", field, topic));
+
 
 
 
