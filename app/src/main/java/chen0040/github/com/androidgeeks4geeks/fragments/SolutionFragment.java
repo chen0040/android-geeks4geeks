@@ -71,7 +71,8 @@ public class SolutionFragment extends Fragment {
         Topic topic = Topic.getEnum(getArguments().getString("topic"));
         String name = getArguments().getString("name");
         String filename = getArguments().getString("filename");
-        this.solution = new Solution(name, filename, field, topic);
+        String category = getArguments().getString("category");
+        this.solution = new Solution(category, name, filename, field, topic);
         this.sourceCode = getSourceCode();
         Log.i(TAG, sourceCode);
     }

@@ -117,12 +117,14 @@ public class MainActivity extends AppCompatActivity implements FragmentMediator 
         Topic topic = solution.getTopic();
         String filename = solution.getFilename();
         String name = solution.getName();
+        String category = solution.getCategory();
 
         Bundle bundle = new Bundle();
         bundle.putString("field", field.toString());
         bundle.putString("topic", topic.toString());
         bundle.putString("name", name);
         bundle.putString("filename", filename);
+        bundle.putString("category", category);
         fragment.setArguments(bundle);
 
         ft.replace(R.id.content_frame, fragment, SolutionFragment.TAG);
