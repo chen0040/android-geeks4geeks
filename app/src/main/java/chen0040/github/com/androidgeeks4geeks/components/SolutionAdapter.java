@@ -42,6 +42,9 @@ public class SolutionAdapter extends BaseAdapter {
         final TextView txtProblemIndex = (TextView) convertView.findViewById(R.id.txtProblemIndex);
         txtProblemIndex.setText("Problem #" + (position+1));
 
+        final TextView txtCategory = (TextView) convertView.findViewById(R.id.txtCategory);
+        txtCategory.setText(solutions.get(position).getCategory());
+
 
         return convertView;
     }

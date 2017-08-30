@@ -12,8 +12,9 @@ public class Solution {
     private String name;
     private Field field;
     private Topic topic;
+    private String category;
 
-    public Solution(String name, String filename, Field field, Topic topic) {
+    public Solution(String category, String name, String filename, Field field, Topic topic) {
         this.name = name;
         this.filename = filename;
         this.field = field;
@@ -34,5 +35,9 @@ public class Solution {
 
     public Topic getTopic() {
         return topic;
+    }
+
+    public String getCategory() {
+        return category;
     }
 }
