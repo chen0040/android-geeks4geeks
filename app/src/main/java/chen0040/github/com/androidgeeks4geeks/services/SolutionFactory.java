@@ -51,7 +51,7 @@ public class SolutionFactory {
         solutions.add(new Solution("Check if two numbers are equal without using arithmetic and comparison operators", "bitwise_algorithms/check_equal_using_bitwise.java", field, topic));
         solutions.add(new Solution("Find XOR of two number without using XOR operator", "bitwise_algorithms/xor_without_xor.java", field, topic));
         solutions.add(new Solution("XOR counts of 0s and 1s in binary representation", "bitwise_algorithms/xor_counts_zeroes_and_ones.java", field, topic));
-
+        solutions.add(new Solution("Calculate XOR from 1 to n.", "bitwise_algorithms/xor_from_one_to_n.java", field, topic));
 
 
 
