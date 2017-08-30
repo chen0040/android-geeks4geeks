@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,6 +49,8 @@ public class TopicFragment extends Fragment {
 
         lvSolutions.setOnItemClickListener((parent, view, position, id) -> mediator.gotoSolution(solutions.get(position)));
 
+        TextView txtTitle = (TextView)mainView.findViewById(R.id.txtTitle);
+        txtTitle.setText(topic.toString());
 
         return mainView;
     }

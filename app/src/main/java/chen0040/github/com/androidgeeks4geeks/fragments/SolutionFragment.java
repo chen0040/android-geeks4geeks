@@ -89,6 +89,9 @@ public class SolutionFragment extends Fragment {
 
         txtProblem.setText(getComments(sourceCode));
 
+        TextView txtTitle = (TextView)mainView.findViewById(R.id.txtTitle);
+        txtTitle.setText(solution.getName());
+
         return mainView;
     }
 
