@@ -57,7 +57,7 @@ public class SolutionFactory {
         solutions.add(new Solution("Basic", "Swap three variables without using temporary variable", "bitwise_algorithms/swap_three_numbers.java", field, topic));
         solutions.add(new Solution("Basic", "Check if a number has bits in alternate pattern", "bitwise_algorithms/bit_alternative_patterns.java", field, topic));
         solutions.add(new Solution("Basic", "Count minimum bits to flip such that XOR of A and B equal to C", "bitwise_algorithms/min_bits_to_flip_xor.java", field, topic));
-
+        solutions.add(new Solution("Basic", "Efficient method for 2’s complement of a binary string", "bitwise_algorithms/two_complement_of_binary_str.java", field, topic));
 
 
         Log.i(TAG, "solutions: " + solutions.size());
