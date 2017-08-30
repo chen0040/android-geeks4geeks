@@ -61,6 +61,7 @@ public class SolutionFactory {
         solutions.add(new Solution("Basic", "Toggle case of a string using Bitwise operators", "bitwise_algorithms/toggle_string_case.java", field, topic));
         solutions.add(new Solution("Basic", "Toggling k-th bit of a number", "bitwise_algorithms/toggle_k_th_bit.java", field, topic));
         solutions.add(new Solution("Basic", "Convert decimal fraction to binary number", "bitwise_algorithms/convert_decimal_to_binary.java", field, topic));
+        solutions.add(new Solution("Basic", "Toggle all the bits of a number except k-th bit.", "bitwise_algorithms/toggle_very_bit_except_k_th.java", field, topic));
 
         Log.i(TAG, "solutions: " + solutions.size());
 
