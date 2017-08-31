@@ -62,7 +62,8 @@ public class SolutionFactory {
         solutions.add(new Solution("Basic", "Toggling k-th bit of a number", "bitwise_algorithms/toggle_k_th_bit.java", field, topic));
         solutions.add(new Solution("Basic", "Convert decimal fraction to binary number", "bitwise_algorithms/convert_decimal_to_binary.java", field, topic));
         solutions.add(new Solution("Basic", "Toggle all the bits of a number except k-th bit.", "bitwise_algorithms/toggle_very_bit_except_k_th.java", field, topic));
-
+        solutions.add(new Solution("Basic", "Set the rightmost unset bit", "bitwise_algorithms/set_rightmost_unset_bit.java", field, topic));
+        solutions.add(new Solution("Basic", "Convert a binary number to octal", "bitwise_algorithms/convert_binary_to_octal.java", field, topic));
         Log.i(TAG, "solutions: " + solutions.size());
 
         return solutions;
