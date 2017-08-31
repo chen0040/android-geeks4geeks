@@ -64,6 +64,7 @@ public class SolutionFactory {
         solutions.add(new Solution("Basic", "Toggle all the bits of a number except k-th bit.", "bitwise_algorithms/toggle_very_bit_except_k_th.java", field, topic));
         solutions.add(new Solution("Basic", "Set the rightmost unset bit", "bitwise_algorithms/set_rightmost_unset_bit.java", field, topic));
         solutions.add(new Solution("Basic", "Convert a binary number to octal", "bitwise_algorithms/convert_binary_to_octal.java", field, topic));
+        solutions.add(new Solution("Basic", "Check in binary array the number represented by a subarray is odd or even", "bitwise_algorithms/check_subarray_odd_or_even.java", field, topic));
         Log.i(TAG, "solutions: " + solutions.size());
 
         return solutions;
