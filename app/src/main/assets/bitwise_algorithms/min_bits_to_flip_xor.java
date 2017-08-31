@@ -1,4 +1,5 @@
 /**
+ * Count the minimum bits to flip such that XOR of A and B equal to C
  **/
 
 public class Solution {

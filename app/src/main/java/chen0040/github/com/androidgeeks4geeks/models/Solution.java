@@ -19,6 +19,7 @@ public class Solution {
         this.filename = filename;
         this.field = field;
         this.topic = topic;
+        this.category = category;
     }
 
     public String getName() {
