@@ -73,6 +73,8 @@ public class SolutionFactory {
         solutions.add(new Solution("Basic", "Find the smallest number with n set and m unset bits", "bitwise_algorithms/smallest_number_with_n_set_bits.java", field, topic));
         solutions.add(new Solution("Basic", "Sum of numbers with exactly 2 bits set", "bitwise_algorithms/sum_of_numbers_with_2_set_bits.java", field, topic));
         solutions.add(new Solution("Basic", "Check if binary representation of a given number and its complement are anagram", "bitwise_algorithms/binary_anagram_check.java", field, topic));
+        solutions.add(new Solution("Basic", "Josephus Problem Using Bit Magic", "bitwise_algorithms/josephus_problem.java", field, topic));
+
         Log.i(TAG, "solutions: " + solutions.size());
 
         return solutions;
