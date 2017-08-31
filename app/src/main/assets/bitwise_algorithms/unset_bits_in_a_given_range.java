@@ -17,7 +17,7 @@
 public class Solution {
     public int unsetBitsInGivenRange(int n, int r, int l) {
         int mask = ((1 << r) - 1) ^ ((1 << l) - 1);
-        mask = ~mask;
+        mask = ((1 << 31) - 1) ^ mask;
         return n & mask;
     }
 }
