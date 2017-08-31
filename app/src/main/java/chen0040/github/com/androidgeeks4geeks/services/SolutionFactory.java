@@ -68,6 +68,7 @@ public class SolutionFactory {
         solutions.add(new Solution("Basic", "Toggle the last m bits", "bitwise_algorithms/toggle_last_m_bits.java", field, topic));
         solutions.add(new Solution("Basic", "1 to n bit numbers with no consecutive 1s in binary representation.", "bitwise_algorithms/no_consecutive_ones.java", field, topic));
         solutions.add(new Solution("Basic", "Toggle bits in the given range", "bitwise_algorithms/toggle_bits_in_a_given_range.java", field, topic));
+        solutions.add(new Solution("Basic", "Unset bits in the given range", "bitwise_algorithms/unset_bits_in_a_given_range.java", field, topic));
         Log.i(TAG, "solutions: " + solutions.size());
 
         return solutions;
